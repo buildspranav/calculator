@@ -1,6 +1,13 @@
+let display = '';
 function reset(){
-  document.querySelectorByElementId("calculations").innerHTML = "";
+ display = "";
+ document.getElementById("calculations").innerHTML = display;
 }
 function add(a) {
-  document.querySelectorByElementId("calculations").innerHTML = `${a}`;
+  display += `${a}`;
+  document.getElementById("calculations").innerHTML = display;
+}
+function remove(){
+  display.slice(0,-1);
+  document.getElementById("calculations").innerHTML = display;
 }
