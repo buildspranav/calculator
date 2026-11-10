@@ -14,7 +14,9 @@ body{
   background-color: white;
   margin-top: 4px;
   width: auto;
-  height: auto;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
   border: 6px solid rgb(23, 23, 23);
   box-shadow: 0px 0px 60px rgba(168, 158, 158, 0.151);
@@ -25,7 +27,7 @@ body{
   padding: 4px 0px 0px 8px;
 }
 #calculator-result-section{
-  height: 160px;
+  min-height: 160px;
 }
 #calculator-button-section{
   margin-left: 8px;
