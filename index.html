@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <header>
+    <!-- <h1 id="title">Calculator</h1> -->
+  </header>
+  <section id="calculator-result-section">
+    <p id="calculations"></p>
+  </section>
+  <section id="calculator-button-section">
+    <div id="button-section">
+      <div id="top-functions">
+        <button class="top-btn function-btn AC-btn" onclick="reset()">AC</button>
+        <button class="top-btn function-btn" onclick="add()">()</button>
+        <button class="top-btn function-btn" onclick="add()">%</button>
+        <button class="top-btn function-btn" onclick="add()">/</button>
+      </div>
+      <div id="number-top-container">
+        <button class="number-btn" onclick="add(7)">7</button>
+        <button class="number-btn" onclick="add(8)">8</button>
+        <button class="number-btn" onclick="add(9)">9</button>
+        <button class="function-btn" onclick="add()">x</button>
+      </div>
+      <div id="number-middle-container">
+        <button class="number-btn" onclick="add(4)">4</button>
+        <button class="number-btn" onclick="add(5)">5</button>
+        <button class="number-btn" onclick="add(6)">6</button>
+        <button class="function-btn" onclick="add()">-</button>
+      </div>
+      <div id="number-bottom-container">
+        <button class="number-btn" onclick="add(1)">1</button>
+        <button class="number-btn" onclick="add(2)">2</button>
+        <button class="number-btn" onclick="add(3)">3</button>
+        <button class="function-btn" onclick="add()">+</button>
+      </div>
+      <div id="number-first-container">
+        <button class="number-btn" onclick="add()">0</button>
+        <button class="number-btn" onclick="add()">00</button>
+        <button class="number-btn" onclick="add()"><img src=""></button>
+        <button class="function-btn result-btn" onclick="add()">=</button>
+      </div>
+    </div>
+  </section>
+  <script src="javascript.js"></script>
+</body>
+</html>
